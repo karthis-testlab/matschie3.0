@@ -7,12 +7,13 @@ import com.matschie.testng.apis.TestNGHooks;
 
 public class IncidentServiceTest extends TestNGHooks {
 	
+	IncidentService incident = new IncidentService();
+	
 	@Test
 	public void validateCreateIncidentCall() {		
-		IncidentService incident = new IncidentService();
-		incident.createIncident();
-		
-		// new IncidentService().createIncident();
-	}
+		response = incident.createIncident();
+		incident.validateSuccessResponse(response);
+		System.out.println(incident.extractSysId(response));
+	}	
 
 }

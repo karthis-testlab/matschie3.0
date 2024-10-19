@@ -81,5 +81,15 @@
 			<groupId>io.qameta.allure</groupId>
 			<artifactId>allure-cucumber6-jvm</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.18.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.11.0</version>
+		</dependency>
 	</dependencies>
 </project>
